@@ -1,0 +1,21 @@
+name: WorldBorder
+main: me.tvhee.worldborder.WorldBorderPlugin
+version: 1.0.0
+api-version: 1.13
+author: Tvhee
+commands:
+  worldbordertimer:
+    description: Manage the world border timer
+    usage: /worldbordertimer
+    aliases: [wbt, wbordert, wbordertimer, wbtimer]
+  worldborderreset:
+    description: Reset the world border to it's minimum size
+    usage: /worldborderreset
+    aliases: [wbr, wborderr, worldborderr, wbreset]
+permissions:
+  worldborder.command.timer:
+    description: "Permission to use /wbt"
+    op: false
+  worldborder.command.reset:
+    description: "Permission to use /wbr"
+    op: false

@@ -1,0 +1,31 @@
+plugin:
+  #Do not touch! This will reset the border on the next restart if set to "true"
+  #Does nothing if set to "false"
+  first-use: false
+  worlds: ["world", "world_nether", "world_the_end"]
+  min-size: 20
+  player-dies:
+    #TThis will only run once if the player dies. It removes "remove-radius"
+    remove-radius: 40
+    #in "speed" seconds
+    speed: 6
+  timer:
+    #The timer will run every "period" seconds
+    period: 180
+    #and adds "add-radius"
+    add-radius: 20
+    #in "speed" seconds
+    speed: 40
+  messages:
+    command:
+      #These messages are only visible to the sender of the command
+      border-task-resumed: "&3&l[WorldBorder] &r&aYou have successfully resumed the worldborder task!"
+      border-task-cancelled: "&3&l[WorldBorder] &r&cYou have successfully cancelled the worldborder task!"
+      border-reset: "&3&l[WorldBorder] &r&aYou have successfully reset the border to %min-size%!"
+      no-permission: "&3&l[WorldBorder] &r&cYou do not have permission to use this command!"
+    announcement:
+      #These messages are visible to everyone on the server
+      max-size: "&6&l[WorldBorder] &r&2Border has reached the maximum size of %blocks%"
+      grow: "&6&l[WorldBorder] &r&aBorder has been grown by %blocks%"
+      shrink: "&6&l[WorldBorder] &r&cBorder has been shrunk by %blocks%"
+      min-size: "&6&l[WorldBorder] &r&4Border has reached the minimum size of %blocks%"
